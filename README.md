@@ -3,4 +3,5 @@ Scripts to analyze data from synchrotron X-ray scattering measurements
 
 Files:
 
-ConvertGBToTIF.py - Simple GUI to convert .gb (general binary) files to .tif images
+GIWAXS_Image_Simulator.py - command-line script to simulate GIWAXS image from CIF file
+GIWAXS_Image_Simulator_GUI.py - GUI program to simulate GIWAXS image from CIF file
