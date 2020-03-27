@@ -8,5 +8,5 @@ A collection of programs in Python to process and analyze data from sychrotron X
 ### Convert Binary to TIFF  
 To save output from CCDs, data from sychrotrons are often saved as binary files. These streams of bytes must be decoded and reshaped to produced a tractable image. This program does batch conversion of binary files to TIFF image files, provided you know the output image resolution and the number precision of the encoded bytes.  
 
-![Convert Binary To TIFF](https://user-images.githubusercontent.com/6731730/77806869-373bb100-7043-11ea-8d59-bec3e95d86d9.png)
+<img src="https://user-images.githubusercontent.com/6731730/77806869-373bb100-7043-11ea-8d59-bec3e95d86d9.png" width=300>
 
