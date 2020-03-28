@@ -10,12 +10,16 @@ To save output from CCDs, data from sychrotrons are often saved as binary files.
 
 <img src="https://user-images.githubusercontent.com/6731730/77806869-373bb100-7043-11ea-8d59-bec3e95d86d9.png" width=600>  
 &nbsp;  
+
 ### GIWAXS Image Simulator  
+
 This program allows you to simulate the GIWAXS (Grazing-Incidence Wide-Angle X-Ray Scattering) pattern of any fiber-textured thin film given that you have a CIF (Crystallographic Information File) file and knowledge of the out-of-plane crystallographic direction.  
 
 <img src="https://user-images.githubusercontent.com/6731730/77809304-4f63fe00-704c-11ea-8f16-3bd91d431e56.png" width=600>  
 &nbsp;  
+
 ### X-Ray Scattering Analyzer  
+
 This program allows you to manipulate images collected from synchrotron X-ray diffraction. The beam center and sample-to-detector distance are calibrated using a diffraction image of a known calibrant (silver behenate or lanthanum hexaboride). The program has functions to calculate rotationally averaged diffraction patterns for isotropic samples, geometrically-corrected diffraction images for anisotropic GIWAXS measurements, and in-plane and out-of-plane intensity cuts.  
 
 <img src="https://user-images.githubusercontent.com/6731730/77809478-137d6880-704d-11ea-9852-4dd336509fde.png" width=600>  
