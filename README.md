@@ -1,5 +1,5 @@
 # X-Ray Scattering Tools
-A collection of programs in Python 3 to process and analyze data from sychrotron X-ray diffraction  
+A collection of programs in Python 3 to process and analyze data from sychrotron X-ray diffraction. The GIWAXS Image Simulator program was used to generate the simulated GIWAXS images in the publication N. R. Venkatesan <i>et al</i>, <i>Chem. Mater.</i>, <b>2018</b> ([10.1021/acs.chemmater.8b03832](https://pubs.acs.org/doi/abs/10.1021/acs.chemmater.8b03832)). 
 
 ### Dependencies:  
 `PyQt5`, `sys`, `numpy`, `matplotlib`, `tifffile`, and `pathlib`  
