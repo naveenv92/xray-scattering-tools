@@ -1,7 +1,9 @@
-###----------- Binary File Converter ---------###
-###--------------- Version 1.0 ---------------###
-###---------- Updated: February 2020 ---------###
-###------ Developed by Naveen Venkatesan -----###
+"""
+Binary File Converter
+Version: 1.0
+Updated: February 2020
+Author: Naveen Venkatesan
+"""
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog, QMessageBox

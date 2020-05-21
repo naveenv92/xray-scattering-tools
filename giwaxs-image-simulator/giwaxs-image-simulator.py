@@ -1,7 +1,9 @@
-###---------- GIWAXS Image Simulator ---------###
-###--------------- Version 1.0 ---------------###
-###---------- Updated: February 2020 ---------###
-###------ Developed by Naveen Venkatesan -----###
+"""
+GIWAXS Image Simulator
+Version 1.0
+Updated: February 2020
+Author: Naveen Venkatesan
+"""
 
 ## Import required packages
 from PyQt5 import QtCore, QtGui, QtWidgets

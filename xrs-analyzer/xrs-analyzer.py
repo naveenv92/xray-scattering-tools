@@ -1,7 +1,9 @@
-###--------- X-Ray Scattering Analyzer -------###
-###--------------- Version 1.0 ---------------###
-###---------- Updated: February 2020 ---------###
-###------ Developed by Naveen Venkatesan -----###
+"""
+X-Ray Scattering Analyzer
+Version 1.0
+Updated: February 2020
+Author: Naveen Venkatesan
+"""
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
