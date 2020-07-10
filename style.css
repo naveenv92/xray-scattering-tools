@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.main-title {
+    display: block;
+    color: #cc8400;
+    text-align: center; 
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.subtitle {
+    display: block;
+    color: #3792cb;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 3vh;
+}
+
+.section-title {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.content-para {
+    width: 80%;
+    margin: auto;
+    margin-top: 4vh;
+}
+
+@media(min-width: 700px) {
+    .content-para {
+        width: 65%;
+    }
+}
