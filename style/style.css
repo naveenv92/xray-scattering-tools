@@ -20,6 +20,14 @@ html {
     margin-bottom: 3vh;
 }
 
+.subsubtitle {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
 .section-title {
     display: block;
     text-align: center;
@@ -33,8 +41,22 @@ html {
     margin-top: 4vh;
 }
 
+.code-block {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
 @media(min-width: 700px) {
     .content-para {
         width: 65%;
+    }
+
+    .subsubtitle {
+        width: 50%;
+    }
+
+    .code-block {
+        width: 50%;
     }
 }

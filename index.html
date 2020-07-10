@@ -8,7 +8,10 @@
 
         <!--Bootstrap CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel='stylesheet' href='./style.css'>
+        <link rel='stylesheet' href='./style/style.css'>
+
+        <!--Prism-->
+        <link rel="stylesheet" href='./style/prism.css'>
         
         <title>X-Ray Scattering Tools</title>
     </head>
@@ -50,6 +53,41 @@
             This software is licensed under the MIT license, feel free to contribute features and improve 
             any functionality as you see fit. Here is a link to <a href='https://github.com/naveenv92/xray-scattering-tools'>fork the repository</a> on Github.
         </p>
+
+        <h4 class='subtitle' style='margin-top: 50px; color: black;'>Installation Instructions</h4>
+
+        <h5 class='subsubtitle'>1. Clone Github repository</h5>
+        <div class='code-block'>
+            <pre><code class='language-bash'>
+> git clone https://github.com/naveenv92/xray-scattering-tools
+> cd xray-scattering-tools/
+            </code></pre>
+        </div>
+
+        <h5 class='subsubtitle'>2. Create and activate virtual environment</h5>
+        <div class='code-block'>
+            <pre><code class='language-bash'>
+> python3 -m venv venv
+> source venv/bin/activate
+            </code></pre>
+        </div>
+
+        <h5 class='subsubtitle'>3. Install dependencies</h5>
+        <div class='code-block'>
+            <pre><code class='language-bash'>
+> (venv) pip install -r requirements.txt
+            </code></pre>
+        </div>
+
+        <h5 class='subsubtitle'>4. Run analysis tools</h5>
+        <div class='code-block'>
+            <pre><code class='language-bash'>
+> (venv) python convert-binary-to-tiff/convert-binary-to-tiff.py
+> (venv) python giwaxs-image-simulator/giwaxs-image-simulator.py
+> (venv) python xrs-analyzer/xrs-analyzer.py
+            </code></pre>
+        </div>
+
     </div>
     <div class='container-fluid' style='padding-top: 50px; padding-bottom: 50px; background-color: #dcdcdc;'>
         <h1 class='section-title'>Convert Binary To TIFF</h1>
@@ -80,10 +118,14 @@
         </footer>
     </div>
     
-        <!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!--Prism-->
+    <script src='./style/prism.js'></script>
+    
     </body>
 </html>
