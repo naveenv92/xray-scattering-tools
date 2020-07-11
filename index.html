@@ -168,6 +168,62 @@
         <div class='tool-img'>
             <img src='https://user-images.githubusercontent.com/6731730/77809478-137d6880-704d-11ea-9852-4dd336509fde.png' width=100%/>
         </div>
+        <h5 class='subsubtitle'>Calibrating sample-to-detector distance</h5>
+        <ol class='inputs-outputs'>
+            <li>Open the <code style='color: black;'>.tif</code> file of your calibrant with the <kbd>Browse...</kbd> button &ndash; 
+            the image resolution fields should automatically populate.</li>
+
+            <li>Select your calibrant (currently supports AgBe and LaB<sub>6</sub>) and enter the X-ray energy and pixel size of the detector in the associated boxes. Now click <kbd>Calibrate</kbd> and 
+            a new window should open with your calibrant image file.</li>
+
+            <li>Zoom in and click points on the 3<sup>rd</sup> diffraction ring of your calibrant &ndash; you may select up to 
+                30 points. When finished, press <kbd>Enter</kbd> to fit your selected points and extract the beam center and 
+            sample-to-detector distance. You may now exit the calibration window &ndash; the fields for beam center and SDD 
+            should now be populated.</li>
+        </ol>
+
+        <h5 class='subsubtitle'>Circular Averaging</h5>
+        <ol class='inputs-outputs'>
+            <li>Open the <code style='color: black;'>.tif</code> file of your sample with the <kbd>Browse...</kbd> button &ndash; 
+            the minimum and maximum intensity fields should automatically populate.</li>
+
+            <li>To get the circular average, press the <kbd>Circular Average</kbd> button. After a few seconds, a new window will 
+            pop up with a plot of the average intensity values as a function of scattering vector (q). These values will also be saved in a 
+            <code style='color: black;'>.csv</code> file in the same directory as your sample image.</li>
+        </ol>
+
+        <h5 class='subsubtitle'>In-plane/out-of-plane linecuts</h5>
+        <ol class='inputs-outputs'>
+            <li>Open the <code style='color: black;'>.tif</code> file of your sample with the <kbd>Browse...</kbd> button &ndash; 
+            the minimum and maximum intensity fields should automatically populate (if you have done so already, you do not need 
+            to reload the file).</li>
+
+            <li>Set the incident angle of your experiment in the associated field.</li>
+
+            <li>To get your linecuts, press the <kbd>IP Linecut</kbd> or <kbd>OOP Linecut</kbd> buttons. After a few seconds, a new window will 
+            pop up with a plot of intensity values as a function of Q<sub>xy</sub> (in-plane) or Q<sub>z</sub> (out-of-plane). These values will 
+            also be saved in a <code style='color: black;'>.csv</code> file in the same directory as your sample image.</li>
+        </ol>
+
+        <h5 class='subsubtitle'>Reshaped GIXS image</h5>
+        <ol class='inputs-outputs'>
+            <li>Open the <code style='color: black;'>.tif</code> file of your sample with the <kbd>Browse...</kbd> button &ndash; 
+            the minimum and maximum intensity fields should automatically populate (if you have done so already, you do not need 
+            to reload the file).</li>
+
+            <li>Set the incident angle of your experiment in the associated field.</li>
+
+            <li>You may end the minimum and maximum values of Q<sub>xy</sub> (default [0, 2.5]), Q<sub>z</sub> (default [0, 2.5]), and the intensity in the associated 
+            fields.</li>
+
+            <li>In the right-bottom panel, you have control over the font and font-size, colormap, and major/minor tick 
+                intervals. You may change these as you desire.
+            </li>
+
+            <li>To get your reshaped GIXS image, press the <kbd>GIXS Image</kbd> button. After a few seconds, a new window will 
+            pop up with the reshaped GIXS image, and this will also be saved as a <code style='color: black;'>.png</code> file 
+            in the same directory as your sample image.</li>
+        </ol>
         <div class='embed-container'>
             <iframe src='https://www.youtube.com/embed/ZhmAYNLbEHY' frameborder='0' allowfullscreen></iframe>
         </div>
