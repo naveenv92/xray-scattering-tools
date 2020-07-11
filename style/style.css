@@ -52,7 +52,8 @@ html {
 .inputs-outputs {
     display: block;
     width: 80%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1.1rem;
     line-height: 1.7rem;
 }
