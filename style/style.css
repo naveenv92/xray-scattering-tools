@@ -39,11 +39,49 @@ html {
     width: 80%;
     margin: auto;
     margin-top: 4vh;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
 }
 
 .code-block {
     display: block;
     width: 80%;
+    margin: auto;
+}
+
+.inputs-outputs {
+    display: block;
+    width: 80%;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+.inputs-outputs li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tool-img {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 10vh; 
+    left: 20vw; 
+    width: 60%; 
+    height: 60%;
     margin: auto;
 }
 
@@ -59,4 +97,14 @@ html {
     .code-block {
         width: 50%;
     }
+
+    .tool-img {
+        width: 60%;
+    }
+
+    .inputs-outputs {
+        width: 50%;
+    }
+
+
 }

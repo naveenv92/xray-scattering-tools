@@ -23,10 +23,10 @@
             </button>
             <div class='collapse navbar-collapse' id='navbarCollapse'>
                 <div class='navbar-nav'>
-                    <a href='#' class='nav-item nav-link active'>Home</a>
-                    <a href='#' class='nav-item nav-link'>Convert</a>
-                    <a href='#' class='nav-item nav-link'>Simulate</a>
-                    <a href='#' class='nav-item nav-link'>Analyze</a>
+                    <a href='#' class='nav-item nav-link'>Home</a>
+                    <a href='#convert' class='nav-item nav-link'>Convert</a>
+                    <a href='#simulate' class='nav-item nav-link'>Simulate</a>
+                    <a href='#analyze' class='nav-item nav-link'>Analyze</a>
                 </div>
                 <div class='navbar-nav ml-auto'>
                     <a href='https://github.com/naveenv92/xray-scattering-tools' class='nav-item nav-link'>Fork Me!</a>
@@ -89,16 +89,64 @@
         </div>
 
     </div>
-    <div class='container-fluid' style='padding-top: 50px; padding-bottom: 50px; background-color: #dcdcdc;'>
+    <div class='container-fluid' id='convert' style='padding-top: 50px; padding-bottom: 50px; background-color: #ededed;'>
         <h1 class='section-title'>Convert Binary To TIFF</h1>
+        <img src='https://user-images.githubusercontent.com/6731730/77806869-373bb100-7043-11ea-8d59-bec3e95d86d9.png' class='tool-img'/>
+        <p class='content-para'>
+            To save output from CCDs, data from sychrotrons are often saved as binary files. These streams of bytes must be decoded and 
+            reshaped to produced a tractable image. This program does batch conversion of binary files to TIFF image files, provided you 
+            know the output image resolution and the number precision of the encoded bytes.
+        </p>
+        <h5 class='subsubtitle'>Operating Instructions</h5>
+        <ol class='inputs-outputs'>
+            <li>Load images (binary files) using the <kbd>Browse...</kbd> button &ndash; to select multiple files use <kbd>Ctrl</kbd> / <kbd>&#8984;</kbd> 
+            or <kbd>Shift</kbd> when selecting files.</li>
+
+            <li>Enter the image width and height values in pixels (should be the same as your detector size).</li>
+
+            <li>Select the number precision of the pixel encoding (<code style='color: black;'>signed/unsigned short, signed/unsigned int, signed/unsigned long, signed/unsigned long long, float, or double</code>).</li>
+        
+            <li>Select the save directory with the <kbd>Browse...</kbd> button &ndash; this directory will be set by default to the location of your binary files.</li>
+        
+            <li>Click <kbd>Convert Files</kbd> to generate your TIFF files for further analysis.</li>
+        </ol>
+        <div class='embed-container'>
+            <iframe src='https://www.youtube.com/embed/soZ8hCynn8Y' frameborder='0' allowfullscreen></iframe>
+        </div>
     </div>
-    <div class='container-fluid' style='padding-top: 50px; padding-bottom: 50px;'>
+   
+    <div class='container-fluid' id='simulate' style='padding-top: 50px; padding-bottom: 50px;'>
         <h1 class='section-title'>GIWAXS Image Simulator</h1>
+        <img src='https://user-images.githubusercontent.com/6731730/77809304-4f63fe00-704c-11ea-8f16-3bd91d431e56.png' class='tool-img'/>
+        <p class='content-para'>
+            This program allows you to simulate the GIWAXS (Grazing-Incidence Wide-Angle X-Ray Scattering) pattern of any fiber-textured 
+            thin film given that you have a CIF (Crystallographic Information File) file and knowledge of the out-of-plane crystallographic 
+            direction.
+        </p>
+        <h5 class='subsubtitle'>Operating Instructions</h5>
+        <ol class='inputs-outputs'>
+            <li>Load both your <code style='color: black;'>.cif</code> and structure factor files using <kbd>Browse...</kbd> buttons &ndash; upon 
+            loading the <code style='color: black;'>.cif</code>, the lattice parameters and angles should populate.</li>
+
+            <li>Set the maximum values of Q<sub>xy</sub> and Q<sub>z</sub> for the simulation &ndash; the output is a 1000 x 1000 TIFF file with both Q<sub>xy</sub> and Q<sub>z</sub> starting at 0 &#8491;<sup>-1</sup>.</li>
+
+            <li>Peak shapes are approximated by three-dimensional Gaussian functions with rotation. You must set a value for the full-width at half maximum (fwhm) 
+                of peak broadening in the x-direction (along Q<sub>xy</sub>) and y-direction (along Q<sub>z</sub>), in &#8491;<sup>-1</sup>.
+            </li>
+        
+            <li>Set the out-of-plane direction of your sample (hkl).</li>
+        
+            <li>Click <kbd>Simulate GIWAXS Pattern</kbd> to generate a list of reflections (<code style='color: black;'>.csv</code>), 
+                and a TIFF file of the final simulated image. At the conclusion of the program, a window will pop-up with the simulated 
+                image.</li>
+        </ol>
     </div>
-    <div class='container-fluid' style='padding-top: 50px; padding-bottom: 50px; background-color: #dcdcdc;'>
+    
+    <div class='container-fluid' id='analyze' style='padding-top: 50px; padding-bottom: 50px; background-color: #ededed;'>
         <h1 class='section-title'>X-Ray Scattering Analyzer</h1>
+        <img src='https://user-images.githubusercontent.com/6731730/77809478-137d6880-704d-11ea-9852-4dd336509fde.png' class='tool-img'/>
     </div>
-    <div class='container-fluid' style='padding-top: 50px; padding-bottom: 50px;'>
+    <div class='container-fluid' id='contact' style='padding-top: 50px; padding-bottom: 50px;'>
         <h1 class='section-title'>Contact</h1>
         <p style='text-align: center; margin-top: 4vh; font-size: 1.4rem;'>
             <a href='mailto:naveen.venkatesan@gmail.com'>naveen.venkatesan@gmail.com</a>
