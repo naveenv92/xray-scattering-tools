@@ -127,6 +127,20 @@
             thin film given that you have a CIF (Crystallographic Information File) file and knowledge of the out-of-plane crystallographic 
             direction.
         </p>
+        <h5 class='subsubtitle'>Generating structure factors in <a href='https://jp-minerals.org/vesta/en/' target='_blank'>VESTA</a></h5>
+        <ol class='inputs-outputs'>
+            <li>Open your <code style='color: black;'>.cif</code> with VESTA</li>
+
+            <li>Navigate to <kbd>Edit > Edit Data > Unit Cell</kbd>.</li>
+
+            <li>Click the <kbd>Remove Symmetry</kbd> button to remove all symmetry elements in the structure. Click <kbd>Ok</kbd>
+            to exit from unit cell menu.</li>
+        
+            <li>Navigate to <kbd>Navigate > Structure Factors</kbd>, edit the X-ray wavelength (&lambda;) and click <kbd>Calculate</kbd>.</li>
+        
+            <li>Use the <kbd>Export</kbd> button to save your structure factor data – you may now exit VESTA (do not save the file to revert to original symmetry).</li>
+        </ol>
+
         <h5 class='subsubtitle'>Operating Instructions</h5>
         <ol class='inputs-outputs'>
             <li>Load both your <code style='color: black;'>.cif</code> and structure factor files using <kbd>Browse...</kbd> buttons &ndash; upon 
