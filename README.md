@@ -1,4 +1,7 @@
-# X-Ray Scattering Tools
+# X-Ray Scattering Tools  
+
+For more comprehensive installation and operating instructions, please visit the repository website at [https://naveenv92.github.io/xray-scattering-tools/](https://naveenv92.github.io/xray-scattering-tools/).  
+
 A collection of programs in Python 3 to process and analyze data from sychrotron X-ray diffraction. The GIWAXS Image Simulator program was used to generate the simulated GIWAXS images in the publication N. R. Venkatesan <i>et al.</i>, <i>Chem. Mater.</i>, <b>2018</b> ([10.1021/acs.chemmater.8b03832](https://pubs.acs.org/doi/abs/10.1021/acs.chemmater.8b03832)). 
 
 ### Dependencies:  
