@@ -799,8 +799,8 @@ class Ui_MainWindow(object):
             # Make sure input to arccos is between 0 and 1
             if phi[i] > 1:
                 phi[i] = 1
-            elif phi[i] < 0:
-                phi[i] = 0
+            elif phi[i] < -1:
+                phi[i] = -1
             
             phi[i] = np.arccos(phi[i])
 
